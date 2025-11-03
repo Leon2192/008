@@ -1,5 +1,6 @@
 import {
   Box,
+  Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -26,12 +27,12 @@ const Hero = () => {
       ref={ref}
       sx={{
         position: "relative",
-        width: "100%",
-        height: "100svh", // ✅ usa unidades seguras para viewport móvil (mejor que 100vh)
+        height: "100vh",
+        width: "100%", // ✅ importante: usar 100% en lugar de 100vw
         margin: 0,
         padding: 0,
         backgroundImage: `url(${isMobile ? mobileImage : desktopImage})`,
-        backgroundSize: "cover", // ✅ ocupa completamente el contenedor
+        backgroundSize: "cover",
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         display: "flex",
@@ -39,10 +40,21 @@ const Hero = () => {
         justifyContent: "center",
         textAlign: "center",
         overflow: "hidden",
-        touchAction: "none", // evita scroll involuntario
       }}
     >
-      {/* Capa transparente (puede eliminarse o ajustar si querés overlay oscuro) */}
+      {/* Fix global opcional para scroll horizontal */}
+      <Box
+        sx={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          overflowX: "hidden", // ✅ evita cualquier desplazamiento lateral
+        }}
+      />
+
+      {/* Capa transparente */}
       <Box
         sx={{
           position: "absolute",
@@ -59,12 +71,12 @@ const Hero = () => {
       <Box
         sx={{
           position: "absolute",
-          bottom: { xs: 10, md: 20 },
+          bottom: 20,
           left: "50%",
           transform: "translateX(-50%)",
           zIndex: 2,
           animation: "bounce 2s infinite",
-          fontSize: { xs: "2.5rem", md: "3rem" },
+          fontSize: "3rem",
           "@keyframes bounce": {
             "0%, 20%, 50%, 80%, 100%": {
               transform: "translateX(-50%) translateY(0)",
@@ -78,7 +90,7 @@ const Hero = () => {
           },
         }}
       >
-        <a href="#info" style={{ color: "#000", textDecoration: "none" }}>
+        <a href="#info" style={{ color: "#000000", textDecoration: "none" }}>
           <KeyboardArrowDownIcon fontSize="inherit" />
         </a>
       </Box>
