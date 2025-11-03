@@ -22,7 +22,7 @@ const Fiesta = () => {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        px: 2,
+      
       }}
     >
       <Slide in={inView} direction="up" timeout={800}>
