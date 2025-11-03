@@ -5,8 +5,8 @@ const Thanks = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const desktopImage = "/images/imagenes/GRACIAS.png";
-  const mobileImage = "/images/imagenes/GRACIAS.png";
+  const desktopImage = "/images/imagenes/GRACIAS2.png";
+  const mobileImage = "/images/imagenes/GRACIAS2.png";
 
   return (
     <Box
