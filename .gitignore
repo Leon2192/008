@@ -1,0 +1,78 @@
+# === Node ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# === Environment Files ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Build / Output ===
+dist/
+build/
+.next/
+out/
+coverage/
+.vite/
+.vercel/
+.tmp/
+temp/
+
+# === Logs ===
+logs/
+*.log
+*.log.*
+*.out
+*.pid
+*.seed
+*.gz
+pids/
+
+# === IDE / Editors ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Testing ===
+coverage/
+jest-html-reporters-*
+playwright-report/
+test-results/
+
+# === TypeScript ===
+*.tsbuildinfo
+
+# === Miscellaneous ===
+.cache/
+.eslintcache
+.parcel-cache/
+.stylelintcache
+*.swp
+*.bak
+*.tmp
+*.orig
+*.rej
+
+# === Local Config / Secrets ===
+.secret/
+firebase-debug.log
+firebase-debug.*.log
+
+# === PM2 / Process Managers ===
+pids/
+logs/
+*.pid
+pm2.log
