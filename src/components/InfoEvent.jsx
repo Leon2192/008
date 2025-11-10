@@ -8,7 +8,7 @@ const InfoEvent = () => {
   });
 
   const mapsUrl =
-    "https://www.google.com/maps/place/Espacio+Andes/@-27.5100456,-58.812873,17z/data=!3m1!4b1!4m6!3m5!1s0x94456beb49fd5c7b:0x69776977c2cfd670!8m2!3d-27.5100456!4d-58.8102981!16s%2Fg%2F11hcsqphlz?entry=ttu";
+    "https://www.google.com/maps/place/Parroquia+San+Francisco+Solano/@-27.4625881,-58.8351533,17z/data=!3m1!4b1!4m6!3m5!1s0x94456ca5f9173f77:0x5cb01a00561675f!8m2!3d-27.4625881!4d-58.8351533!16s%2Fg%2F1tf76lvx?entry=ttu&g_ep=EgoyMDI1MTEwNS4wIKXMDSoASAFQAw%3D%3D";
 
   return (
     <Box
@@ -43,7 +43,7 @@ const InfoEvent = () => {
           <Typography
             variant="h4"
             sx={{
-              fontFamily: "'Slight'",
+              fontFamily: "'Eyesome'",
               fontSize: { xs: "2rem", md: "2.8rem" },
               color: "#000000",
               fontWeight: 600,
@@ -81,7 +81,7 @@ const InfoEvent = () => {
               whiteSpace: "nowrap",
             }}
           >
-            21:00 hs
+            20:45 hs
           </Typography>
 
           {/* Dirección */}

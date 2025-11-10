@@ -37,7 +37,7 @@ const Confirm = () => {
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "'Slight'",
+            fontFamily: "'Eyesome'",
             fontSize: { xs: "2.5rem", md: "3.5rem" },
             color: "#000000",
             fontWeight: "semibold",
